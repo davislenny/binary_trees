@@ -15,7 +15,7 @@ size_t bt_levels(const binary_tree_t *tree)
 
 	l = bt_levels(tree->left);
 	r = bt_levels(tree->right);
-	return (MAX(a, b) + 1);
+	return (MAX(l, r) + 1);
 }
 
 /**
